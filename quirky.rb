@@ -34,14 +34,14 @@ quirky_bird_define(:square_first) do |a_value|
 end
 
 quirky_bird_define(:maybe) do |value|
-    if value.nil?
-        BasicObject.tap do |it|
-            def it.method_missing(*args)
-                nil
-            end
-        end
-    else
-        value
+  if value.nil?
+    BasicObject.tap do |it|
+      def it.method_missing(*args)
+        nil
+      end
     end
+  else
+    value
+  end
 end
 
