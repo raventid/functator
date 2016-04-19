@@ -1,0 +1,6 @@
+{
+  "name": "Functator",
+  "tagline": "Playing with functional tricks in Ruby.",
+  "body": "# functator\r\n\r\nPlaying with functional tricks in Ruby.\r\n\r\nRepository were I am thinking about undiscovered Ruby idioms.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
