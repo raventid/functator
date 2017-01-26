@@ -10,11 +10,6 @@ end
 def cardinal_define(name, &proc_over_proc)
   define_method_taking_block(name) do |a_value, a_proc|
     proc_over_proc.call(a_proc).call(a_value)
-    # Elixir style pipe operator, why not create this tiny op for Ruby
-    # object.call() looks really OPish, but so ugly :((
-    # proc_over_proc
-    # <| a_proc
-    # <| a_value
   end
 end
 
